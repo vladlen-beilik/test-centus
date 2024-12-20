@@ -39,6 +39,7 @@ return [
 ```
 - Unfortunately, all weather services are limited in use or only paid, so I found several suitable ones for demonstration.
 - That is why I did not implement the receipt of weather data for the user. The plan was to put it in the scheduled tasks when there was data in the alerts table.
+- The actual process of collecting data and sending notifications is in [TestCommand.php](app/Console/Commands/TestCommand.php)
 - I only use the `mail driver` to send notifications, because others are difficult to test. `Slack` is inconvenient for the average user. It is also inconvenient for setting up any `broadcast`. For `SMS`, you know, you need to bother with documents.
 
 > In the end, the project is certainly not ideal, I deliberately missed many details. I think that for demonstration and test work it is enough. I spent 8-9 hours on it.
